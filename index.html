@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#stats">Stats</a></li>
+        </ul>
+    </nav>
+    <div id="breadcrumbs">Home &gt; Dashboard</div>
+    <div id="dashboard">
+        <div class="dashboard-item">Hit Counter: <span id="hitCounter">0</span></div>
+        <div class="dashboard-item">Points: <span id="points">0</span></div>
+        <div class="dashboard-item">Scores: <span id="scores">0</span></div>
+    </div>
+    <div id="stats">
+        <h2>Stats</h2>
+        <canvas id="customChart" width="300" height="150"></canvas>
+        <div id="spiderChartContainer">
+            <canvas id="spiderChart" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <div id="games">
+        <h1>Multiplayer Tic Tac Toe</h1>
+        <div id="game">
+            <table id="board">
+                <tr>
+                    <td data-cell="0"></td>
+                    <td data-cell="1"></td>
+                    <td data-cell="2"></td>
+                </tr>
+                <tr>
+                    <td data-cell="3"></td>
+                    <td data-cell="4"></td>
+                    <td data-cell="5"></td>
+                </tr>
+                <tr>
+                    <td data-cell="6"></td>
+                    <td data-cell="7"></td>
+                    <td data-cell="8"></td>
+                </tr>
+            </table>
+            <div id="status"></div>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Multiplayer Tic Tac Toe. All rights reserved.</p>
+    </footer>
+    <script src="game.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

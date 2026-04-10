@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background: #f0f0f0; text-align: center; }
+#game { margin: 40px auto; width: 220px; }
+#board { border-collapse: collapse; margin: 0 auto 20px; }
+#board td { width: 60px; height: 60px; border: 2px solid #333; font-size: 2em; text-align: center; cursor: pointer; background: #fff; }
+#status { margin-bottom: 10px; font-weight: bold; }
+#restart { padding: 8px 20px; font-size: 1em; cursor: pointer; }

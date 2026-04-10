@@ -1,0 +1,10 @@
+-- SQL for multiplayer Tic Tac Toe
+CREATE DATABASE IF NOT EXISTS tic_tac_toe;
+USE tic_tac_toe;
+
+CREATE TABLE IF NOT EXISTS games (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  state VARCHAR(32) NOT NULL,
+  player CHAR(1) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
