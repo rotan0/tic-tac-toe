@@ -2,7 +2,7 @@
  * Tic-Tac-Toe — game logic
  *
  * Two-player (X / O) game with win detection, draw detection,
- * persistent score tracking (sessionStorage), and board reset.
+ * in-memory score tracking across rounds, and board reset.
  */
 
 const WIN_LINES = [
